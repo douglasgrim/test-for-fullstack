@@ -1,0 +1,6 @@
+<div class="graycanvas" ng-click="dotclick($event)">
+  <div ng-repeat="mes in mezzages" ng-show="mes.dot" style="left:{{mes.dot.x}}px;top:{{mes.dot.y}}px" class="dot"></div>
+</div>
+<div ng-repeat="mes in mezzages" ng-hide="mes.dot">{{mes.name}}</div>
+<div><input ng-model="mezzage.name" /><button ng-click="postMezzage()">POST</button></div>
+
